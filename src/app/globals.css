@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+	@apply transition-all duration-200 p-2 rounded-lg shadow-lg flex items-center justify-center gap-2;
+}
+
+/* Disable default radio icons of react-menu */
+.szh-menu__item--type-radio::before,
+.szh-menu__item--checked::before {
+	display: none;
+}
+
+.szh-menu__item--hover {
+	@apply rounded-lg;
+}
